@@ -1,0 +1,440 @@
+/*General properties*/
+/*html { 
+  background: url(../images/motivation-quote.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}*/
+
+body{
+	font-family:"Times New Roman", Times, serif;
+	font-size: 14px;
+	line-height: 1.5;
+	text-transform:capitalize;
+}
+
+.float-container{
+	overflow:hidden;
+}
+
+#container{
+	max-width: 1280px;
+	height: 100%;
+	margin: auto;
+}
+
+a, .rating{
+	cursor:pointer;
+	display: block;
+	text-decoration: none;
+}
+
+/*1. top*/
+.top-wrapper{
+	width: 100%;
+	height: 100%;
+	max-width: 100%;
+	max-height: 100%;
+}
+		h1{
+			font-size: 3.5em;
+			text-align: center;
+		}
+
+	img {
+		width: 100%;
+		max-height:100%;
+		max-width:100%;
+	  	display: block;
+	  	margin: auto;
+	}
+
+/*2. middle*/
+.content {
+	float:left;
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	position: relative;
+}
+/*code for navigation bar*/
+.menu{
+	padding: 10px 0;
+	width: 100%;
+	height: 22px;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+	.login, .collapsed{
+		width: 10%; 
+    	max-width: 40px; 
+    	min-width: 40px; 
+    	float: left;
+	}
+
+    .logo { 
+    	overflow: auto;
+/*	 	-webkit-transform: rotate(-90deg);
+	 	   -moz-transform: rotate(-90deg);
+	            transform: rotate(-90deg);
+	    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+	    font-family:Arial, Helvetica, sans-serif;*/
+    }
+    .logo img{
+    	width: auto;
+    }
+
+    .login {
+    	float: right;
+    }
+
+    .login img{
+    	width: 30px;
+    }
+
+.menu-holder{
+	width: 100%;
+	max-width: 1280px;
+	height: 100%;
+	background-color: rgba( 0,0,0,0.3 );
+	text-align: left;
+	position:absolute;
+	z-index:1;
+	overflow: hidden;
+}
+
+.menu-holder>li{
+	float: left;
+}
+
+	.general span{
+		float: right;
+	}
+
+	.menu-holder li{
+		background: white;
+		border-top: 1px solid black;
+		font-weight: bold;
+	}
+
+	.menu-holder li li{
+		color: grey;
+	}
+
+	.menu-holder li li li{
+		color: lightgrey;
+	}
+
+	.menu-holder li a{
+		padding: 10px 15px;
+		display: block;
+	}
+
+/*code for boxes*/
+#boxes{
+	float:left;
+	width: 100%;
+	border: 1px solid gray;
+	position: relative;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+	h2{
+		font-family:  Papyrus;
+		font-size: 4vmin;
+		padding-left: 2%;
+		margin: 5% 0;
+		font-weight: bold;
+	}
+
+	.difficulty-level, .muscle-title{
+		width: 100%;
+		float: left;
+	}
+
+	.difficulty-level a, .muscle-title a{
+		width: 33.3333333%;
+		float: left;
+		text-align: center;
+		border: 1px solid gray;
+		border-right:none;
+		-webkit-box-sizing: border-box;
+	       -moz-box-sizing: border-box;
+	            box-sizing: border-box;
+	}
+
+	.difficulty-level span{
+		font-size: 0.75em;
+	}
+
+
+	.show-diffexercise, .show-diffmuscle{
+		width: 100%;
+		height: 100%;
+	}
+
+	#boxes button, #explanation button{
+		width: 50%;
+		float:left;
+		font-size: 1.5em;
+		-webkit-box-sizing: border-box;
+		   -moz-box-sizing: border-box;
+		        box-sizing: border-box;
+	}
+
+	.box{
+		float:left;
+		width:33.333333%;
+		border: 1px solid white;
+		-webkit-box-sizing: border-box;
+		   -moz-box-sizing: border-box;
+		        box-sizing: border-box;
+	}
+
+
+	@media all and (min-width: 383px) and (max-width: 479px) {
+		.box{
+			width:25%;
+		}
+	}
+
+	@media all and (min-width: 480px) and (max-width: 600px), (min-width: 1024px) {
+		.box{
+			width:16.666666667%;
+		}
+	}
+
+
+	@media all and (min-width: 601px) and (max-width: 1023px) {
+		.box{
+			width:12.5%;
+		}
+	}
+
+	.box a:hover {
+	    position: relative;
+	}
+
+	.box a span {
+	    display: none;
+	}
+
+	.box a:hover span {
+		color: white;
+	    display: table-cell;
+	    background: rgba(0,0,0,0.7);
+	    font-size: 0.7em;
+	    width: 100%;
+	    height: 100%;
+	    text-align: center;
+	    vertical-align: middle;
+	    position: absolute;
+	    top: 0%;
+	    padding-left: 0px;
+	   	padding-top: 2em;
+	}
+
+	.boxes-holder {
+		overflow: hidden;
+	}
+
+/*code for explanation*/
+#explanation{
+	float:right;
+	width: 100%;
+	border: 1px solid gray;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+@media all and (min-width: 1024px) {
+	#boxes, #explanation{
+		width: 50%;
+	}
+
+}
+
+	.video-name{
+		font-size: 1.5em;
+		font-weight: bold;
+		float: left;
+		width: 100%;
+		border: 1px solid gray;
+		-webkit-box-sizing: border-box;
+	       -moz-box-sizing: border-box;
+	            box-sizing: border-box;
+	}
+
+	.steps{
+		width: 100%;
+		float:left;
+		padding-top: 0.5em;
+		border: 5px solid green;
+		display: none;
+		-webkit-box-sizing: border-box;
+	       -moz-box-sizing: border-box;
+	            box-sizing: border-box;
+	}
+
+	.muscle-worked{
+		float: left;
+		padding: 0.5em;
+		display: block;
+		width: 100%;
+		-webkit-box-sizing: border-box;
+	       -moz-box-sizing: border-box;
+	            box-sizing: border-box;
+	}
+
+	.muscle-worked h4{
+		float: left;
+		width: 50%;
+		-webkit-box-sizing: border-box;
+	       -moz-box-sizing: border-box;
+	            box-sizing: border-box;
+	}
+
+	.muscles{
+		float: left;
+		width: 50%;
+		-webkit-box-sizing: border-box;
+	       -moz-box-sizing: border-box;
+	            box-sizing: border-box;
+	}
+
+
+	.diagram{
+		float: left;
+		width: 40%;
+		border: 5px solid red;
+		-webkit-box-sizing: border-box;
+	       -moz-box-sizing: border-box;
+	            box-sizing: border-box;
+	}
+
+	.video-container {
+	    position: relative;
+	    padding-bottom: 56.25%;
+	    padding-top: 30px;
+	    height: 0; 
+	    overflow: hidden;
+	}
+	 
+	.video-container iframe,
+	.video-container object,
+	.video-container embed {
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	    height: 100%;
+	}
+
+	.video-name h3{
+		font-size: 1.4em;
+	}
+
+/*code for tool*/
+#tool{
+	width: 100%;
+	border: 1px solid gray;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+	.workout-day{
+		width: 100%;
+
+	}
+
+	.workout-day button{
+		padding: 0.5em;
+		text-align:left;
+		float:left;
+		width: 12.5%;
+		text-align: center;
+		text-transform:capitalize;
+	}
+
+	.toolbox{
+		font-weight: bolder;
+		color:blue;
+	}
+
+	@media all and (min-width: 600px) {
+		#tool button{
+			font-size: 1.5em;
+		}
+	}
+
+	.exercise-editor{
+		float: left;
+		width: 12.5%;
+		background-color: white;
+	}
+
+	.exercise-editor button{
+		width: 100%;
+		padding: 20px 0;
+		text-transform:capitalize;
+	}
+
+	.drop-area{
+		float:left;
+		width: 87.5%;
+		min-height: 200px;
+		text-align: center;
+		color: DeepSkyBlue;
+		-webkit-box-sizing: border-box;
+	       -moz-box-sizing: border-box;
+	            box-sizing: border-box;
+	}
+
+	.drop-area p{
+		font-size: 3em;
+	}
+
+	.drop-area ul li{
+		padding-left: 2em;
+		font-size: 1.25em;
+		color: black;
+		text-align: left;
+	}
+
+/*3. bottom*/
+footer {
+	padding: 1em;
+	background-color: gray;
+	width: 100%;
+	color: white;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+.hover-text{
+	position: absolute;
+	top:0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(,0,0,0,0.2);
+	color: white;
+	display: none;
+}
+
+.diagram{
+	display: none;
+}
+
+#draggable {
+    width: 100px;
+    height: 100px;
+    background: #ccc;
+}
